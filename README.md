@@ -1,7 +1,7 @@
 # CodeNotes
 
-These are Study Notes for interviews, the language of choice will be Javascript. 
-Data structures, Algorithms, Concepts
+- These are Study Notes for interviews, the language of choice will be Javascript. 
+- Data structures, Algorithms, Concepts
 
 ## DATA STRUCTURES 
 
