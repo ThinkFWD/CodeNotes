@@ -6,7 +6,6 @@ Data structures, Algorithms, Concepts
 ## Data Structures
 
 ### Array
-#### Time Complexity
 | Access | Search | Insertion | Deletion | Space Complexity |
 | ------ | ------ | --------- | -------- | ---------------- |
 |  O(1)  |  O(N)  |    O(N)   |   O(N)   |       O(N)       |
@@ -16,35 +15,30 @@ Data structures, Algorithms, Concepts
 
 
 ### Binary Heap (Min-Heaps and Max Heaps)
-#### Time Complexity
 | Access | Search | Insertion | Deletion | Space Complexity |
 | ------ | ------ | --------- | -------- | ---------------- |
 |  N/A   |  O(N)  |    O(1)   |  log(N)  |       O(N)       |
 
 
 ### Hash Tables
-#### Time Complexity
 | Access | Search | Insertion | Deletion | Space Complexity |
 | ------ | ------ | --------- | -------- | ---------------- |
 |  N/A   |  O(1)  |    O(1)   |   O(N)   |       O(N)       |
 
 
 ### Link Lists
-#### Time Complexity
 | Access | Search | Insertion | Deletion | Space Complexity |
 | ------ | ------ | --------- | -------- | ---------------- |
 |  O(N)  |  O(N)  |    O(1)   |   O(1)   |       O(N)       |
 
 
 ### Trees, Tries, Graphs
-#### Time Complexity
 | Access | Search | Insertion | Deletion | Space Complexity |
 | ------ | ------ | --------- | -------- | ---------------- |
 | log(N) | log(N) |   log(N)  |  log(N)  |       O(N)       |
 
 
 ### Stack and Queues
-#### Time Complexity
 | Access | Search | Insertion | Deletion | Space Complexity |
 | ------ | ------ | --------- | -------- | ---------------- |
 |  O(N)  |  O(N)  |    O(1)   |   O(1)   |       O(N)       |
