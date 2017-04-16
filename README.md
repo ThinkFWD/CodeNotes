@@ -23,6 +23,19 @@
 - (Largest / Smallest ) variable will be located at the root of the tree. 
 - Binary Heap can be implemented as an array, where index indicate location.
 
+#### Insert
+
+- Insert node at the bottom of the tree.
+- Compare value to parent node. If values is (Less/Greater) than parent node, swap (Max/Min Heap).
+- Keep swapping until conditions are met (essentially bubble up). 
+- Min tree: lowest at root, level 1: less at right, great on right.
+- Max tree: greatest at root, level 1: greater on right, less at left. 
+
+#### Remove
+ - Swap the last element on the last level with root value
+ - Compare root with children (less/greater), and swap if needed based on (Max/Min) heap. 
+ 
+ 
 
 
 
