@@ -17,6 +17,8 @@ Data structures, Algorithms, Concepts
 |  N/A   |  O(N)  |    O(1)   |  log(N)  |       O(N)       |
 
 
+![alt text](https://github.com/ThinkFWD/CodeNotes/blob/master/assets/maxHeap.png)
+
 - Binary Heap (Max/Min) is a complete binary tree that maintains (Max/Min)
 - (Largest / Smallest ) variable will be located at the root of the tree. 
 - Binary Heap can be implemented as an array, where index indicate location.
@@ -30,10 +32,20 @@ Data structures, Algorithms, Concepts
 |  N/A   |  O(1)  |    O(1)   |   O(N)   |       O(N)       |
 
 
+
+![alt text](https://github.com/ThinkFWD/CodeNotes/blob/master/assets/hashtable.gif)
+
+
 ### Link Lists
 | Access | Search | Insertion | Deletion | Space Complexity |
 | ------ | ------ | --------- | -------- | ---------------- |
 |  O(N)  |  O(N)  |    O(1)   |   O(1)   |       O(N)       |
+
+
+![alt text](https://github.com/ThinkFWD/CodeNotes/blob/master/assets/linkList.gif)
+
+
+
 
 
 ### Trees, Tries, Graphs
