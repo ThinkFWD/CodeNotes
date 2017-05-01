@@ -1,5 +1,6 @@
-
-// ES6 Method of writing constructors
+// +++++++++++++++++++++++++++++++++++++++++++
+// ++++ Implementation of Linked List ES6 ++++
+// +++++++++++++++++++++++++++++++++++++++++++
 
 class Node {
   constructor (data) {
@@ -9,7 +10,7 @@ class Node {
   }
 }
 
-class linkList {
+class linkedList {
   constructor (value) {
     this.head = new Node(value);
     this.tail = this.head;
@@ -65,7 +66,7 @@ class linkList {
 
 console.log('___________ Linked List _____________')
 
-let names = new linkList ('Michael')
+let names = new linkedList ('Michael')
 
 names.addNode ('John')
 names.addNode ('bob')
