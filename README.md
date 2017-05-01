@@ -54,8 +54,16 @@
 | ------ | ------ | --------- | -------- | ---------------- |
 |  O(N)  |  O(N)  |    O(1)   |   O(1)   |       O(N)       |
 
-
 ![alt text](https://github.com/ThinkFWD/CodeNotes/blob/master/assets/linkList.gif)
+
+- Single linkedlist: Each node points to the next node (unless double linkedlist)
+- Contains a head and tail, allows for constant time insertion and deletion 
+- Must traverse through the whole list to find a variable
+
+#### Insert
+- 
+
+
 
 
 
