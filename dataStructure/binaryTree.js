@@ -116,7 +116,7 @@ binaryTree.prototype.find = function (data) {
 
 
 binaryTree.prototype.BFS = function (target) {
-  
+
 }
 
 
