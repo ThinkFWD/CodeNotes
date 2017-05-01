@@ -12,6 +12,7 @@ node.prototype.show = function () {
   return this.data;
 }
 
+
 const binaryTree = function () {
   this.root = null;
   this.inOrderArr = [];
@@ -98,6 +99,21 @@ binaryTree.prototype.getMax = function (){
 
 }
 
+binaryTree.prototype.find = function (data) {
+  let current = this.root; 
+  while (current.data != data){
+    if (data < current.data){
+      current = current.left;
+    } else {
+      current = current.right;
+    } 
+    if (current == null){
+      return null
+    }
+  }
+  return current;
+}
+
 
 // EXAMPLE TEST CASE
 var newTree = new binaryTree();
@@ -123,5 +139,6 @@ console.log('Pre Order', newTree.preOrder(newTree.root));
 console.log('Post Order', newTree.postOrder(newTree.root));
 console.log('Get Min', newTree.getMin());
 console.log('Get Max', newTree.getMax());
+console.log('Find', newTree.find(13));
 
 
