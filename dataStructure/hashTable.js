@@ -1,6 +1,7 @@
 // +++++++++++++++++++++++++++++++++++++++
 // ++++ Implementation of Hash Table +++++
 // +++++++++++++++++++++++++++++++++++++++
+// Psuedoclassical - ES5 
 
 const hashTable = function (){
   this.table = new Array(137);
@@ -30,9 +31,7 @@ hashTable.prototype.showDist = function () {
 
 // EXAMPLE TEST CASE
 
-
 let profiles = new hashTable;
-
 profiles.insert('Michael');
 profiles.insert('John');
 profiles.insert('Fred');

@@ -1,6 +1,6 @@
-// +++++++++++++++++++++++++++++++++++++++++++
-// ++++ Implementation of Linked List ES6 ++++
-// +++++++++++++++++++++++++++++++++++++++++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++++
+// ++++ Implementation of Double Linked List ES6 ++++
+// ++++++++++++++++++++++++++++++++++++++++++++++++++
 
 class Node {
   constructor (data) {
@@ -21,7 +21,6 @@ class linkedList {
     let current = this.head;
 
     while(current !== null){
-
       if(current.next === null) {
       	current.next = info;
       	current.next.previous = current;
