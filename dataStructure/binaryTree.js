@@ -115,6 +115,8 @@ binaryTree.prototype.find = function (data) {
 }
 
 
+
+
 // EXAMPLE TEST CASE
 var newTree = new binaryTree();
 newTree.insert(5);
@@ -124,6 +126,8 @@ newTree.insert(1);
 newTree.insert(13);
 newTree.insert(6);
 newTree.insert(7);
+
+console.log('___________ BINARY TREE _____________')
 console.log('Binary Tree', newTree.root)
 /*
       5
@@ -140,5 +144,6 @@ console.log('Post Order', newTree.postOrder(newTree.root));
 console.log('Get Min', newTree.getMin());
 console.log('Get Max', newTree.getMax());
 console.log('Find', newTree.find(13));
+
 
 
