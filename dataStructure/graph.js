@@ -56,4 +56,4 @@ countries.addEdge(2,4);
 
 console.log(countries.showGraph());
 
-countries.DFS(0);
+countries.DFS(4);
