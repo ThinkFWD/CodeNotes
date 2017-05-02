@@ -61,7 +61,7 @@ class Graph {
    console.log('EdgeTo -->', this.edgeTo)
   }
 
-  pathTo(targetVert){
+  shortestPathTo(targetVert){
   	var source = 0;
   	if(!this.hasPathTo(targetVert)){
   	  return undefined
@@ -101,8 +101,8 @@ console.log(countries.showGraph());
 //countries.DFS(0); // Traverses through the whole graph 
 countries.BFS(0);
 
-var vertex = 7;
-var paths = countries.pathTo(vertex);
+var vertex = 4;
+var paths = countries.shortestPathTo(vertex);
 console.log(paths)
 
 //NOTE: Key aspect = edgeTo = connection from previous node. 
