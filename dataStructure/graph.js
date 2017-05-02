@@ -39,6 +39,26 @@ class Graph {
   }
 
   BFS (targetVert){
+    let queue = []; //you can also init the queue datastructure implmented earlier
+    this.flag[targetVert] = true;
+    queue.push(targetVert)
+    
+    while(queue.length > 0){
+      let vert = queue.shift(); // removes first variable
+      console.log('Visited', vert);
+      if(vert == undefined){
+        console.log('Visited', vert);
+      } 
+      this.adj[vert].forEach((item)=>{
+      	if(!this.flag[item]){
+      	  this.flag[item] = true;
+      	  queue.push(item); 
+      	}
+      })
+    }
+
+
+
 
   }
 }
@@ -56,4 +76,5 @@ countries.addEdge(2,4);
 
 console.log(countries.showGraph());
 
-countries.DFS(4);
+//countries.DFS(4); // Traverses through the whole graph 
+countries.BFS(0);
