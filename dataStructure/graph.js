@@ -14,6 +14,7 @@ class Graph {
     for(var z = 0; z < this.verticies; z++){
       this.flag[z] = false;
     }
+    this.edgeTo = []; // shortest Path questions
   }
 
   addEdge (v,w){
@@ -42,7 +43,7 @@ class Graph {
     let queue = []; //you can also init the queue datastructure implmented earlier
     this.flag[targetVert] = true;
     queue.push(targetVert)
-    
+
     while(queue.length > 0){
       let vert = queue.shift(); // removes first variable
       console.log('Visited', vert);
@@ -51,30 +52,58 @@ class Graph {
       } 
       this.adj[vert].forEach((item)=>{
       	if(!this.flag[item]){
-      	  this.flag[item] = true;
+      	  this.edgeTo[item] = vert;
+       	  this.flag[item] = true;
       	  queue.push(item); 
       	}
       })
     }
+   console.log('EdgeTo -->', this.edgeTo)
+  }
 
+  pathTo(targetVert){
+  	var source = 0;
+  	if(!this.hasPathTo(targetVert)){
+  	  return undefined
+  	}
+  	var path = [];
+    
+    for (let i = targetVert; i != source; i = this.edgeTo[i]){
+      // follow the bread crumbs to the origin
+      path.push(i);
+    }
+    path.push(source)
+    return path;
+  }
 
-
-
+  hasPathTo(targetVert){
+  	return this.flag[targetVert];
   }
 }
-
 
 // EXAMPLE GRAPH
 console.log('___________ Graph _____________')
 
-let countries = new Graph (5);
+let countries = new Graph (8);
 
 countries.addEdge(0,1);
 countries.addEdge(0,2);
 countries.addEdge(1,3);
 countries.addEdge(2,4);
+countries.addEdge(2,5);
+countries.addEdge(3,5);
+countries.addEdge(5,6);
+countries.addEdge(6,7);
 
 console.log(countries.showGraph());
 
-//countries.DFS(4); // Traverses through the whole graph 
+
+//countries.DFS(0); // Traverses through the whole graph 
 countries.BFS(0);
+
+var vertex = 7;
+var paths = countries.pathTo(vertex);
+console.log(paths)
+
+//NOTE: Key aspect = edgeTo = connection from previous node. 
+
