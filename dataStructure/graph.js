@@ -10,7 +10,9 @@ class Graph {
     this.flag = [];
     for(var x = 0; x < this.verticies; x++){
       this.adj[x] = [];
-      this.flag[x] = false;
+    }
+    for(var z = 0; z < this.verticies; z++){
+      this.flag[z] = false;
     }
   }
 
@@ -21,21 +23,22 @@ class Graph {
   }
 
   showGraph (){
-   for (var i = 0; i < this.verticies; i++){
-     console.log(i + "-->");
-     for (var j = 0; j < this.verticies; j++){
-       if(this.adj[i][j] != undefined){
-       	 console.log(this.adj[i][j]+" ")
-       }
-     }
-   }
+  	return this.adj
   }
 
-  DFS (target){
-
+  DFS (targetVert){
+    this.flag[targetVert] = true;
+    if(this.adj[targetVert] != undefined){
+      console.log('Visited Vertex', targetVert);
+      this.adj[targetVert].forEach((item)=>{
+        if(!this.flag[item]){
+          this.DFS(item);
+        }
+      })
+    }
   }
 
-  BFS (target){
+  BFS (targetVert){
 
   }
 }
@@ -51,4 +54,6 @@ countries.addEdge(0,2);
 countries.addEdge(1,3);
 countries.addEdge(2,4);
 
-countries.showGraph();
+console.log(countries.showGraph());
+
+countries.DFS(0);
