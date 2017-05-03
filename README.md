@@ -89,13 +89,15 @@ TBD
 ## Alogrithms
 
 ## Sorting
-### Bubble Sort
-### Insertion Sort
+### [Bubble Sort](https://github.com/ThinkFWD/CodeNotes/blob/master/algorithms/sorting.js)
+### [Insertion Sort](https://github.com/ThinkFWD/CodeNotes/blob/master/algorithms/sorting.js)
 | Time Complexity | Space Complexity |
 | --------------- | ---------------- |
 |      O(N^2)     |       O(N)       |
 
 ![alt text](https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif)
+
+
 
 ### Merge Sort
 ### Quick Sort

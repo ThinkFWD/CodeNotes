@@ -37,7 +37,6 @@ class testArray extends Array {
   insertionSort (){
     let tempStorage;
     let innerIndex;
-
     for (let outer = 1; outer < this.length-1; outer++){
       tempStorage = this[outer];
       innerIndex = outer;
@@ -46,15 +45,13 @@ class testArray extends Array {
       	this[innerIndex] = this[innerIndex-1];
       	innerIndex--;
       }
-
       this[innerIndex] = tempStorage;
     }
   }
 }
 
-console.log ("---------------- SORTING ----------------")
 let randomNumArr = new testArray(10);
-// console.log ("-------------- BUBBLE SORT --------------")
+console.log ("-------------- BUBBLE SORT --------------")
 randomNumArr.genData();
 console.log('Random Array', randomNumArr);
 randomNumArr.bubbleSort();
