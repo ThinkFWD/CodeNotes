@@ -38,9 +38,7 @@
  
  
 
-
-
-### Hash Tables
+### [Hash Tables](https://github.com/ThinkFWD/CodeNotes/blob/master/dataStructure/hashTable.js)
 | Access | Search | Insertion | Deletion | Space Complexity |
 | ------ | ------ | --------- | -------- | ---------------- |
 |  N/A   |  O(1)  |    O(1)   |   O(N)   |       O(N)       |
@@ -50,7 +48,7 @@
 ![alt text](https://github.com/ThinkFWD/CodeNotes/blob/master/assets/hashtable.gif)
 
 
-### Link Lists
+### [Linked Lists](https://github.com/ThinkFWD/CodeNotes/blob/master/dataStructure/linkedList.js)
 | Access | Search | Insertion | Deletion | Space Complexity |
 | ------ | ------ | --------- | -------- | ---------------- |
 |  O(N)  |  O(N)  |    O(1)   |   O(1)   |       O(N)       |
@@ -67,20 +65,30 @@
 
 
 
+### [Graph](https://github.com/ThinkFWD/CodeNotes/blob/master/dataStructure/graph.js)
+| Access | Search | Insertion | Deletion | Space Complexity |
+| ------ | ------ | --------- | -------- | ---------------- |
+| log(N) | log(N) |   log(N)  |  log(N)  |       O(N)       |
 
-
-
-### Trees, Tries, Graphs
+### [Binary Tree](https://github.com/ThinkFWD/CodeNotes/blob/master/dataStructure/binaryTree.js)
 | Access | Search | Insertion | Deletion | Space Complexity |
 | ------ | ------ | --------- | -------- | ---------------- |
 | log(N) | log(N) |   log(N)  |  log(N)  |       O(N)       |
 
 
-### Stack and Queues
+### Tries
+| Access | Search | Insertion | Deletion | Space Complexity |
+| ------ | ------ | --------- | -------- | ---------------- |
+| log(N) | log(N) |   log(N)  |  log(N)  |       O(N)       |
+
+
+### [Queues](https://github.com/ThinkFWD/CodeNotes/blob/master/dataStructure/queues.js)
 | Access | Search | Insertion | Deletion | Space Complexity |
 | ------ | ------ | --------- | -------- | ---------------- |
 |  O(N)  |  O(N)  |    O(1)   |   O(1)   |       O(N)       |
 
+
+### [Stack](https://github.com/ThinkFWD/CodeNotes/blob/master/dataStructure/stack.js)
 
 ### Vectors and ArrayLists
 TBD
