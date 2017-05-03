@@ -91,6 +91,12 @@ TBD
 ### Breadth-First Search
 ### Depth-First Search
 ### Binary Search
+### Bubble Sort
+### Insertion Sort
+| Time Complexity | Space Complexity |
+| --------------- | ---------------- |
+|      O(N^2)     |       O(N)       |
+![alt text](https://upload.wikimedia.org/wikipedia/commons/0/0f/Insertion-sort-example-300px.gif)
 ### Merge Sort
 ### Quick Sort
 
