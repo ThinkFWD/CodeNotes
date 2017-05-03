@@ -1,8 +1,8 @@
 # CodeNotes
-
-- These are Study Notes for interviews, the language of choice will be Javascript. 
+- Language: Javascript
 - Data structures, Algorithms, Concepts
-- By ThinkFWD
+- Study Notes
+
 
 ## DATA STRUCTURES 
 
