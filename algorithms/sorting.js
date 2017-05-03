@@ -50,15 +50,19 @@ class testArray extends Array {
   }
 }
 
-let randomNumArr = new testArray(10);
+let randomNumArr = new testArray(100);
 console.log ("-------------- BUBBLE SORT --------------")
 randomNumArr.genData();
 console.log('Random Array', randomNumArr);
+let timerBubbleStart = new Date().getTime();
 randomNumArr.bubbleSort();
-console.log('Bubble Sorted', randomNumArr);
+let timerBubbleEnd = new Date().getTime();
+console.log('Bubble Sorted in ' + (timerBubbleEnd - timerBubbleStart) + ' milliseconds ', randomNumArr);
 console.log ("------------- INSERTION SORT ------------")
 randomNumArr.genData();
 console.log('Random Array', randomNumArr);
+let timerInsertStart = new Date().getTime();
 randomNumArr.insertionSort();
-console.log('Insertion Sorted', randomNumArr);
+let timerInsertEnd = new Date().getTime();
+console.log('Insertion Sorted in ' + (timerInsertEnd - timerInsertStart) + ' milliseconds ', randomNumArr);
 
