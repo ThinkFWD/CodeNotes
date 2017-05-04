@@ -90,29 +90,29 @@ class testArray extends Array {
 }
 
 // Bubble sort < Insertion Sort [10000 sample]
-let randomNumArr = new testArray(10);
+let randomNumArr = new testArray(100);
 console.log ("-------------- BUBBLE SORT --------------")
 randomNumArr.genData();
-console.log('Random Array', randomNumArr);
+//console.log('Random Array', randomNumArr);
 let Start = new Date().getTime();
 randomNumArr.bubbleSort();
 let End = new Date().getTime();
 console.log('Bubble Sorted in ' + (End - Start) + ' milliseconds ');
-console.log(randomNumArr);
+//console.log(randomNumArr);
 console.log ("------------- INSERTION SORT ------------")
 randomNumArr.genData();
-console.log('Random Array', randomNumArr);
+//console.log('Random Array', randomNumArr);
 Start = new Date().getTime();
 randomNumArr.insertionSort();
 End = new Date().getTime();
 console.log('Insertion Sorted in ' + (End - Start) + ' milliseconds '); 
-console.log(randomNumArr);
+//console.log(randomNumArr);
 console.log ("------------- MERGE SORT ------------")
 randomNumArr.genData();
-console.log('Random Array', randomNumArr);
+//console.log('Random Array', randomNumArr);
 Start = new Date().getTime();
 randomNumArr = randomNumArr.mergeSort(randomNumArr);
 End = new Date().getTime();
 console.log('Merge Sorted in ' + (End - Start) + ' milliseconds '); 
-console.log(randomNumArr);
+//console.log(randomNumArr);
 
