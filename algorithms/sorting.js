@@ -48,21 +48,71 @@ class testArray extends Array {
       this[innerIndex] = tempStorage;
     }
   }
+
+  mergeSort (arr) {
+    let length = arr.length;
+    let mid = Math.floor(length * 0.5);
+    let left = arr.slice(0,mid);
+    let right = arr.slice(mid,length)
+
+    if(length === 1) {
+      return arr;
+    }
+
+    return this.merge(this.mergeSort(left), this.mergeSort(right));
+  }
+
+  merge (leftAr, rightAr){
+    let sorted = [];
+    let i = 0;
+    let j = 0;
+
+    while (i < leftAr.length || j < rightAr.length) {
+      if (i < leftAr.length && j < rightAr.length){
+        if (leftAr[i] < rightAr[j]){
+          sorted.push(leftAr[i]);
+          i++;
+        }else{
+          sorted.push(rightAr[j]);
+          j++
+        }
+      }else if (i < leftAr.length){
+        sorted.push(leftAr[i]);
+        i++;
+      }else{
+        sorted.push(rightAr[j]);
+        j++;
+    }
+  }
+  return sorted;
+
+  }
 }
 
-let randomNumArr = new testArray(100);
+// Bubble sort < Insertion Sort [10000 sample]
+let randomNumArr = new testArray(10);
 console.log ("-------------- BUBBLE SORT --------------")
 randomNumArr.genData();
 console.log('Random Array', randomNumArr);
-let timerBubbleStart = new Date().getTime();
+let Start = new Date().getTime();
 randomNumArr.bubbleSort();
-let timerBubbleEnd = new Date().getTime();
-console.log('Bubble Sorted in ' + (timerBubbleEnd - timerBubbleStart) + ' milliseconds ', randomNumArr);
+let End = new Date().getTime();
+console.log('Bubble Sorted in ' + (End - Start) + ' milliseconds ');
+console.log(randomNumArr);
 console.log ("------------- INSERTION SORT ------------")
 randomNumArr.genData();
 console.log('Random Array', randomNumArr);
-let timerInsertStart = new Date().getTime();
+Start = new Date().getTime();
 randomNumArr.insertionSort();
-let timerInsertEnd = new Date().getTime();
-console.log('Insertion Sorted in ' + (timerInsertEnd - timerInsertStart) + ' milliseconds ', randomNumArr);
+End = new Date().getTime();
+console.log('Insertion Sorted in ' + (End - Start) + ' milliseconds '); 
+console.log(randomNumArr);
+console.log ("------------- MERGE SORT ------------")
+randomNumArr.genData();
+console.log('Random Array', randomNumArr);
+Start = new Date().getTime();
+randomNumArr = randomNumArr.mergeSort(randomNumArr);
+End = new Date().getTime();
+console.log('Merge Sorted in ' + (End - Start) + ' milliseconds '); 
+console.log(randomNumArr);
 
